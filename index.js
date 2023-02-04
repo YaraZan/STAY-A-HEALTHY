@@ -1,6 +1,29 @@
 
 const container = document.querySelector('.app-container');
 
+// Анимация
+
+const lineAnimation = () => {
+    const upperLine = document.querySelector('.upper-line');
+    const bottomLine = document.querySelector('.bottom-line');
+
+    new Vivus(
+        upperLine,
+        {
+          type: 'sync',
+          duration: 200,
+        }
+    );
+
+    new Vivus(
+        bottomLine,
+        {
+          type: 'sync',
+          duration: 200,
+        }
+    );
+};
+
 // Создание startPage элементов
 
 const createStartPageElements = () => {
@@ -50,14 +73,22 @@ const createStartPageElements = () => {
     labelNumber.textContent = 'Сколько тебе лет?';
     btnSubmitStart.textContent = 'Начать';
 
-    inputNumber.addEventListener('input', () => {
-        if (isNaN(parseInt(inputNumber.value))) {
-            inputNumber.value = '';
+    // USER INPUT LIMITATION (!)
+
+    inputText.addEventListener('input', () => {
+            if (isNaN(parseInt((inputText.value).slice(-1))) == false) {
+            inputText.value = '';
         }
     })
 
+    inputNumber.addEventListener('input', () => {
+        if (isNaN(parseInt((inputNumber.value).slice(-1)))) {
+            inputNumber.value = '';
+        }
+    });
+
     btnMin.addEventListener('click', () => {
-        if (inputNumber.value == 0) {
+        if (inputNumber.value == 1 || inputNumber.value == 0) {
             inputNumber.value = '';
         }
         
@@ -137,9 +168,14 @@ const createStartPageElements = () => {
     };
 }
 
+const createSessionPageElements = () => {
+
+};
+
 function startApp(container) {
+    lineAnimation();
     const startPageContainer = createStartPageElements();
     container.append(startPageContainer.startPageContainer);
 };
 
-startApp(container);
+/* startApp(container); */

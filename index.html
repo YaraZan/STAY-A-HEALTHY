@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/main.css">
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js" integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="index.js"></script>
     <title>S-A-H</title>
 </head>
 <body class="body">
@@ -31,10 +32,51 @@
                     </svg>                    
             </div>
         </header>
-        <svg width="1118" height="2" viewBox="0 0 1118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 1L1118 1" stroke="#6B6B6B" stroke-dasharray="10 10"/>
+        <svg class="upper-line" width="1118" height="2" viewBox="0 0 1118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1L1118 1" data-start="20" data-duration="10" stroke="#6B6B6B" stroke-dasharray="10 10"/>
         </svg>   
         <div class="app-container">
+
+            <div class="session-quiz-pick__container">
+                
+                <h2 class="quiz__title">Дело за малым!</h2>
+                <p class="quiz__descr">Пройди 3 теста, узнай свои результаты и получи сертификат!</p>
+
+                <span class="quiz__done">Пройдено 1 / 3</span>
+                <div class="quiz__progress-bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="quiz__interact-zone">
+                    <div class="interact-zone__card card-physics">
+                        <div class="upper-block">Физические нагрузки</div>
+                        <div class="card-hover">
+                            <div class="card__icon icon-physics"></div>
+                            <span class="hover-1"></span>
+                            <span class="hover-2"></span>             
+                        </div>
+                    </div>
+                    <div class="interact-zone__card card-meal">
+                        <div class="upper-block">Правильное питание</div>
+                        <div class="card-hover">
+                            <div class="card__icon icon-meal"></div>
+                            <span class="hover-1"></span>
+                            <span class="hover-2"></span>   
+                        </div>
+                    </div>
+                    <div class="interact-zone__card card-sleep">
+                        <div class="upper-block">Здоровый сон</div>
+                        <div class="card-hover">
+                            <div class="card__icon icon-sleep"></div>
+                            <span class="hover-1"></span>
+                            <span class="hover-2"></span>      
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         <!--     <div class="start-page-container">
                 <h2 class="title-main">Достаточно ли хорошо ты следишь за своим <span style="color: #2FCC59;">здоровьем</span>?</h2>
@@ -66,7 +108,7 @@
         </div>
         <div class="ps">
             <div class="container">
-                <svg width="408" height="2" viewBox="0 0 408 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bottom-line" width="408" height="2" viewBox="0 0 408 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 1L408 1" stroke="#6B6B6B" stroke-dasharray="10 10"/>
                 </svg>                     
                 <span class="ps__description">Сделано с любовью студентами АПТ</span>
