@@ -1,0 +1,96 @@
+
+
+.right__form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    background-color: #2B2B2B;
+    border: 2px solid #4A4A4A;
+    border-radius: 10px;
+    height: 40px;
+    color: #2FCC59;
+    margin-bottom: 18px;
+    padding-left: 10px;
+    transition: all .5s ease-in;
+}
+
+.form__input:hover {
+    background-color: #1f1f1f;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__input:active {
+    background-color: #1f1f1f;
+}
+
+.input-number {
+    width: 208px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-number-min,
+.input-number-max {
+    background-color: #2A2A2A;
+    border: 2px solid #4A4A4A;
+    border-radius: 10px;
+    padding: 20px;
+    height: 40px;
+
+    background-size: 10px 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in;
+}
+
+.input-number-min:hover,
+.input-number-max:hover {
+    background-color: #1f1f1f;
+}
+
+.input-number-min {
+    background-image: url('/STAY-A-HEALTHY/src/assets/min.svg');
+    margin-right: 5px;
+}
+
+.input-number-max {
+    background-image: url('/STAY-A-HEALTHY/src/assets/max.svg');
+}
+
+.form__submit-start {
+    background-color: #2FCC59;
+    border: none;
+    border-radius: 10px;
+    padding: 22px 120px;
+
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+    background-size: 24px 24px;
+    background-position: 98px;
+    background-repeat: no-repeat;
+    background-image: url('/STAY-A-HEALTHY/src/assets/start.svg');
+    transition: all .5s ease-in;
+}
+
+.form__submit-start:hover {
+    background-color: #1d8037;
+}
